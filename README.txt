@@ -6,7 +6,7 @@ Trained model can be tested using classifyInception.py
 	Prints probabilites that each class is in the given image
 
 Running the model: 
-- python inceptionModel.py
+- python classifyInception.py
 - File paths must be changed in inceptionModel.py if any changes are made to data locations
 
 Re-Training model:
