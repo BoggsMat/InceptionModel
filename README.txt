@@ -11,5 +11,7 @@ Running the model:
 
 Re-Training model:
 - Go to root of tensorflow source folder 
-- bazel build tensorflow/examples/image_retraining:retrain
-- bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ~/ARL/InceptionModel/DroneData  --output_graph ~/ARL/InceptionModel/Graph/output_graph.pb --output_labels ~/ARL/InceptionModel/Labels/output_labels.txt --bottleneck_dir ~/ARL/InceptionModel/bottleneck
+- To add a class to train on, add a folder with the name of the new class to the DroneData directory and place all images inside of that new folder
+- Building retrainer: bazel build tensorflow/examples/image_retraining:retrain
+- Training: bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ~/ARL/InceptionModel/DroneData  --output_graph ~/ARL/InceptionModel/Graph/output_graph.pb --output_labels ~/ARL/InceptionModel/Labels/output_labels.txt --bottleneck_dir ~/ARL/InceptionModel/bottleneck
+
