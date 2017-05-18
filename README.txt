@@ -8,7 +8,6 @@ Tensorflow build for retraining:
 Trained model is included in the Graphs folder with the name output_graph.pb
 
 Trained model can be tested using classifyInception.py
-	Prints probabilites that each class is in the given image
 
 The retraining script works by removing the top layer off of the pre-trained inception model and training a new layer on specific classes. More classes can be added by placing training images for a class in a folder within the DroneData folder. When classifyInception.py is run, the trained inception model is loaded and a test image is run through the model. The probability for each class is printed to the terminal (between 0 and 1). 
 
